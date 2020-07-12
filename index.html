@@ -10,6 +10,59 @@
 <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    
+    <h1>Register</h1>
+    <form action="" method="GET">
+        <label for="name"  >First Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="male" value="M" required>
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="Female" value="F">
+        <label for="other">Other</label>
+        <input type="radio" name="sex" id="other" value="O">
+        <label for="email"  required>Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required >
+        <label for="password" >Password</label>
+        <input type="password" name="password"  id="password" minlength="5" maxlength="10" n required placeholder="Your Password">
+        <br>
+        <label for="birthday"></label>
+        <select name="month" id="birthday" required>
+            <option value="">Month</option>
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+            <option value="mar">March</option>
+        </select>
+
+        <select  name="day" required>
+            <option value="">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <select  name="year" required>
+            <option value="">Year</option>
+            <option value="1980">1980</option>
+            <option value="1981">1981</option>
+            <option value="1982">1982</option>
+            <option value="1984">1983</option>
+            <option value="1984">1984</option>
+            <option value="1985">1985</option>
+        </select>
+
+    <br>
+    <label for="agree">I Agree to the terms and conditions</label>
+    <input type="checkbox" name="T&C" id="agree" required>
+    <br>
+        <button type="submit">submit</button>
+        
+
+    </form>
 </body>
 </html>
